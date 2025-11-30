@@ -94,7 +94,9 @@ config_device_list
 config_device_keep_only "cmcc_xr30"
 
 # Modify default theme
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' $(find ./feeds/luci/collections/ -type f -name "Makefile")
+config_package_add luci-theme-argon
 
 # Delete unwanted packages
 config_package_del luci-app-ssr-plus_INCLUDE_NONE_V2RAY
