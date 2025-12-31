@@ -178,10 +178,10 @@ config_package_add iptables-mod-socket
 config_package_add luci-app-passwall2_Iptables_Transparent_Proxy
 config_package_add luci-app-passwall2_INCLUDE_Hysteria
 config_package_del luci-app-passwall2_Nftables_Transparent_Proxy
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Client
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Server
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Client
-config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Server
+# config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Client
+ config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Libev_Server
+# config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Client
+ config_package_del luci-app-passwall2_INCLUDE_Shadowsocks_Rust_Server
 config_package_del luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Client
 config_package_del luci-app-passwall2_INCLUDE_ShadowsocksR_Libev_Server
 config_package_del luci-app-passwall2_INCLUDE_Trojan_Plus
@@ -206,6 +206,109 @@ config_package_add luci-lib-ipkg
 ## byobu, tmux
 config_package_add byobu
 config_package_add tmux
+
+#-----------------------------------------------
+## AdGuard Home
+config_package_add luci-app-adguardhome
+
+## UPnP
+config_package_add luci-app-upnp
+
+## 网络存储
+config_package_add luci-app-samba4
+config_package_add luci-app-minidlna
+
+## 网络监控
+config_package_add luci-app-wrtbwmon
+config_package_add luci-app-nlbwmon
+
+## 网络工具
+config_package_add luci-app-natmap
+config_package_add luci-app-p910nd
+
+## 系统工具
+config_package_add luci-app-filetransfer
+config_package_add luci-app-ramfree
+
+## 网络加速
+config_package_add luci-app-turboacc
+
+## 网络安全
+config_package_add luci-app-firewall4
+
+## 网络分析
+config_package_add luci-app-netdata
+
+## 配置应用商店
+config_package_add luci-app-store
+
+
+## 应用过滤和管理
+config_package_add luci-app-appfilter
+
+## 网络延迟监控
+config_package_add luci-app-apinger
+
+## 支持系统在线升级
+config_package_add luci-app-attendedsysupgrade
+
+# 配置DDNS-Go
+config_package_add luci-app-ddns-go
+
+# Docker容器管理。
+onfig_package_add docker
+config_package_add luci-app-dockerman
+
+## 网络速度测试
+config_package_add luci-app-netspeedtest
+
+## 配置ZeroTier虚拟网络
+config_package_add luci-app-zerotier
+
+# 设备重启和切换固件
+config_package_add luci-app-advanced-reboot
+
+# 基于IP的访问控制
+config_package_add luci-app-banip
+
+# 磁盘管理
+config_package_add luci-app-diskman
+
+# 文件管理助手
+config_package_add luci-app-fileassistant
+
+# 用于配置和管理 iStoreX 存储解决方案，提供文件共享和存储管理功能。
+config_package_add luci-app-istorex
+
+# Frp 客户端
+config_package_add luci-app-frpc
+
+# 在线用户查看
+config_package_add luci-app-onliner
+
+# 设备关机
+config_package_add luci-app-poweroff
+
+# qBittorrent
+config_package_add luci-app-qbittorrent
+
+# 用于配置和管理 PPPoE 服务器。PPPoE 是一种网络协议，允许通过以太网连接提供点对点连接，通常用于宽带连接
+config_package_add luci-app-pppoe-server
+
+# 配置QoS流量管理
+config_package_add luci-app-qos
+
+# 解锁网易云音乐服务
+config_package_add luci-app-unblockneteasemusic
+
+# 配置系统统计信息
+config_package_add luci-app-statistics
+
+# 配置网页访问限制
+config_package_add luci-app-webrestriction
+
+# 配置网页URL过滤
+config_package_add luci-app-weburl
 
 # ## Frp Latest version patch
 
